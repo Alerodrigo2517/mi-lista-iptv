@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Canal9Resistencia.ar@SD" tvg-logo="https://i.imgur.com/xqgRFpC.png" group-title="General",Canal 9 Resistencia (720p)
 http://coninfo.net:1935/9linklivert/smil:9linkmultibr.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal7Neuquen.ar@SD" tvg-logo="https://i.ibb.co/BrvQsWm/C7neuquenlogo2023.png" group-title="General",Canal 7 Neuquén (1080p)
+#EXTINF:-1 tvg-id="Canal7Neuquen.ar@SD" tvg-logo="https://i.ibb.co/BrvQsWm/C7neuquenlogo2023.png" group-title="General",Canal 7 NeuquÃ©n (1080p)
 https://stream.arcast.com.ar/c7nq/ngrp:c7nq_all/playlist.m3u8
 #EXTINF:-1 tvg-id="CorrientesTV.ar@SD" tvg-logo="https://i.imgur.com/7PBkvRp.png" group-title="General",Corrientes TV
 https://617c5175c970b.streamlock.net:4444/13max2/live13maxtv2026/playlist.m3u8
@@ -27,7 +27,5 @@ https://streamconex.com:19360/santaclara-1/santaclara-1.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, como Gecko) Chrome/112.0.0.0 Mobile Safari/537.36
 https://g5.vxral-slo.transport.edge-access.net/a12/ngrp:a24-100056_all/playlist.m3u8?sense=true
 
-#EXTINF:-1 tvg-id="TodoNoticias.ar@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/TN_Todo_Noticias_logo.svg/1200px-TN_Todo_Noticias_logo.svg.png" http-referrer="https://tn.com.ar/envivo/24hs" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" group-title="News",TN - Todo Noticias 24hs (1080p)
-#EXTVLCOPT:http-referrer=https://tn.com.ar/envivo/24hs
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
-https://live-01-01-tn.vodgc.net/TN24/index.m3u8
+#EXTINF:-1 tvg-id="TodoNoticias.ar@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/TN_Todo_Noticias_logo.svg/1200px-TN_Todo_Noticias_logo.svg.png" group-title="News",TN - Todo Noticias 24hs
+https://www.youtube.com/c/todonoticias/live
