@@ -1,41 +1,31 @@
 name: Actualizar Playlist IPTV
 
-# Se ejecuta cada 6 horas automáticamente y también manualmente
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Cada 6 horas: 00:00, 06:00, 12:00, 18:00 UTC
-  workflow_dispatch: # Permite ejecutar manualmente desde GitHub
+    - cron: '0 */6 * * *'  # Cada 6 horas
+  workflow_dispatch: # Ejecutar manualmente
 
 jobs:
   actualizar:
     runs-on: ubuntu-latest
-
     permissions:
-      contents: write  # Necesario para hacer push
+      contents: write
 
     steps:
-      # 1. Clonar el repo
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # 2. Instalar Python
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      # 3. Instalar yt-dlp
-      - name: Instalar dependencias
-        run: pip install yt-dlp
+      - name: Testear canales y generar playlist
+        run: python testear_canales.py
 
-      # 4. Ejecutar el script de actualización
-      - name: Actualizar playlist
-        run: python actualizar.py
-
-      # 5. Subir cambios al repo
       - name: Commit y push
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
           git add canales_iptv.m3u
-          git diff --staged --quiet || (git commit -m "🔄 Playlist actualizada $(date -u '+%Y-%m-%d %H:%M UTC')" && git push)
+          git diff --staged --quiet || (git commit -m "🔄 Playlist actualizada - $(date -u '+%Y-%m-%d %H:%M UTC')" && git push)
