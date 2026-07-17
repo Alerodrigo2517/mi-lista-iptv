@@ -1,5 +1,5 @@
 """
-Genera playlist IPTV filtrada con canales específicos solicitados por el usuario.
+Genera playlist IPTV filtrada con canales específicos solicitados por el usuario y los ordena según sus preferencias.
 """
 import re
 import urllib.request
@@ -42,6 +42,24 @@ def parsear_m3u(contenido):
         i += 1
     return canales
 
+def obtener_prioridad(nombre):
+    nombre_lower = nombre.lower()
+    
+    if "canal 9 res" in nombre_lower:
+        return 1
+    elif "canal 7 neuqu" in nombre_lower:
+        return 2
+    elif "corriente" in nombre_lower:
+        return 3
+    elif "disney" in nombre_lower:
+        return 4
+    elif "sony" in nombre_lower:
+        return 5
+    elif "canal 7" in nombre_lower: # Atrapa canales 70, 72, 79
+        return 6
+    else:
+        return 7 # El resto (A24, etc)
+
 def main():
     contenido = descargar_lista()
     canales = parsear_m3u(contenido)
@@ -74,17 +92,20 @@ def main():
         if match and c["url"] not in vistos:
             filtrados.append(c)
             vistos.add(c["url"])
-            print(f"Agregado: {c['nombre']}")
 
-    print(f"\nGenerando M3U con {len(filtrados)} canales...")
+    # Ordenar los canales usando la función de prioridad
+    filtrados.sort(key=lambda x: (obtener_prioridad(x["nombre"]), x["nombre"]))
+
+    print(f"\nGenerando M3U con {len(filtrados)} canales en el orden solicitado...")
     with open(OUTPUT, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for c in filtrados:
+            print(f"[{obtener_prioridad(c['nombre'])}] {c['nombre']}")
             for line in c["extinf_lines"]:
                 f.write(line + "\n")
             f.write(c["url"] + "\n")
             
-    print(f"Playlist guardada en: {OUTPUT}")
+    print(f"\nPlaylist guardada en: {OUTPUT}")
 
 if __name__ == "__main__":
     main()
