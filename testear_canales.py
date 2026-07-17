@@ -79,12 +79,33 @@ def main():
         "canal 7", # Esto incluye Canal 70 y pico, Canal 79, etc
     ]
     
+    # Canales a excluir (solicitado por el usuario)
+    exclusions = [
+        "telenord corrientes",
+        "canal 7 salta",
+        "canal 7 santiago del estero",
+        "canal 79 puan",
+        "canal 79 villa maza",
+        "5tv corrientes",
+        "tv canal 72"
+    ]
+    
     filtrados = []
     vistos = set()
     
     for c in canales:
         nombre_lower = c["nombre"].lower()
         id_lower = c["extinf_lines"][0].lower()
+        
+        # Verificar exclusiones primero
+        excluded = False
+        for ex in exclusions:
+            if ex in nombre_lower or ex in id_lower:
+                excluded = True
+                break
+                
+        if excluded:
+            continue
         
         match = False
         for kw in keywords:
