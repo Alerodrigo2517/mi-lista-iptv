@@ -48,3 +48,9 @@ https://streamvidex.qzz.io/videx/studiouniversalar/index.m3u8
 
 #EXTINF:-1 tvg-id="USATODAY.us@SD" group-title="News",USA Today (1080p)
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00731-gannettcoinc-usatodaynews-plex/playlist.m3u8
+
+#EXTINF:-1 tvg-id="StarChannelLatinAmerica.us@Panregional" group-title="Movies",Star Channel (1080p)
+http://138.186.23.7:8082/STARCHANNEL/index.m3u8
+
+#EXTINF:-1 tvg-id="Cinecanal.us@Panregional" group-title="Movies",Cinecanal (1080p)
+http://138.186.23.7:8082/CINECANAL/index.m3u8
