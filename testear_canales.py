@@ -28,6 +28,10 @@ def parsear_m3u(contenido):
             # Reemplazar Undefined por General
             linea = linea.replace('group-title="Undefined"', 'group-title="General"')
             
+            # Reemplazar grupo de Disney por General
+            if "disney" in linea.lower():
+                linea = re.sub(r'group-title="[^"]+"', 'group-title="General"', linea)
+            
             extinf_lines = [linea]
             i += 1
             while i < len(lineas) and lineas[i].strip().startswith("#EXTVLCOPT:"):
