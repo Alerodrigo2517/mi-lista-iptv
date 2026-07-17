@@ -25,6 +25,9 @@ def parsear_m3u(contenido):
     while i < len(lineas):
         linea = lineas[i].strip()
         if linea.startswith("#EXTINF:"):
+            # Reemplazar Undefined por General
+            linea = linea.replace('group-title="Undefined"', 'group-title="General"')
+            
             extinf_lines = [linea]
             i += 1
             while i < len(lineas) and lineas[i].strip().startswith("#EXTVLCOPT:"):
