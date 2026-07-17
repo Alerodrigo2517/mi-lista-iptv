@@ -42,3 +42,20 @@ http://138.186.23.7:8082/STARCHANNEL/index.m3u8
 
 #EXTINF:-1 tvg-id="Cinecanal.us@Panregional" group-title="Movies",Cinecanal (1080p)
 http://138.186.23.7:8082/CINECANAL/index.m3u8
+
+#EXTINF:-1 tvg-id="PlutoTVCineComedia.us@LatAm",Pluto TV Cine Comedia
+https://jmp2.uk/plu-5dcdde78f080d900098550e4.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineCrimen.us@LatAm",Pluto TV Cine Crimen
+https://jmp2.uk/plu-624af40c004f8000079b784d.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineDrama.us@LatAm",Pluto TV Cine Drama
+https://jmp2.uk/plu-5dcddfcb229eff00091b6bdf.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineEstelar.us@LatAm",Pluto TV Cine Estelar
+https://jmp2.uk/plu-5dcde437229eff00091b6c30.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineFamilia.us@LatAm",Pluto TV Cine Familia
+https://jmp2.uk/plu-5dd6ddb30a1d8a000908ed4c.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineInspirador.us@LatAm",Pluto TV Cine Inspirador
+https://jmp2.uk/plu-6806d519fea7414f33f57016.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineSuspenso.us@LatAm",Pluto TV Cine Suspenso
+https://jmp2.uk/plu-5ddc4e8bcbb9010009b4e84f.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNuestroCine.us@LatAm",Pluto TV Nuestro Cine
+https://jmp2.uk/plu-5defde6d6c07b50009cf0757.m3u8
