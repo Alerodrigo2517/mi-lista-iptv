@@ -1,22 +1,32 @@
 #EXTM3U
 
+# === NOTICIAS ===
+
 #EXTINF:-1 tvg-id="TN.ar" tvg-name="TN" tvg-logo="https://i.imgur.com/vFwPhPS.png" group-title="Noticias",TN - Todo Noticias
-https://live-01-01-tn.vodgc.net/TN24/index_TN24_1080.m3u8
+https://live-01-01-tn.vodgc.net/TN24/index.m3u8
 
-#EXTINF:-1 tvg-id="LaNacionPlus.ar" tvg-name="La Nacion+" tvg-logo="https://i.imgur.com/Gj1kqH5.png" group-title="Noticias",La Nacion +
-http://200.91.32.158:8080/lnmas/index.m3u8
+#EXTINF:-1 tvg-id="Canal26.ar" tvg-name="Canal 26" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Canal_26_logo_%282022%29.svg/500px-Canal_26_logo_%282022%29.svg.png" group-title="Noticias",Canal 26
+https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8
 
-#EXTINF:-1 tvg-id="Telefe.ar" tvg-name="Telefe" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Telefe_%28nuevo_logo%29.png/960px-Telefe_%28nuevo_logo%29.png" group-title="Generales",Telefe
-http://playcom.trapemn.tv:1935/transcoderip/telefe.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="CanalE.ar" tvg-name="Canal E" tvg-logo="https://i.ibb.co/y4pkxH3/Qtc8-M2-PG-400x400.jpg" group-title="Noticias",Canal E
+https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="A24.ar" tvg-name="A24" tvg-logo="https://i.imgur.com/LnXQkIU.png" group-title="Noticias",A24
 https://g5.vxral-slo.transport.edge-access.net/a12/ngrp:a24-100056_all/playlist.m3u8?sense=true
 
-#EXTINF:-1 tvg-id="C5N.ar" tvg-name="C5N" tvg-logo="https://i.imgur.com/dC9SZlv.png" group-title="Noticias",C5N
-https://g1.vxral-hor.transport.edge-access.net/a12/ngrp:c5n-100055_all/playlist.m3u8?sense=true
+#EXTINF:-1 tvg-id="LaNacionPlus.ar" tvg-name="La Nacion+" tvg-logo="https://i.imgur.com/Gj1kqH5.png" group-title="Noticias",La Nacion +
+http://200.91.32.158:8080/lnmas/index.m3u8
 
-#EXTINF:-1 tvg-id="Canal26.ar" tvg-name="Canal 26" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Canal_26_logo_%282022%29.svg/500px-Canal_26_logo_%282022%29.svg.png" group-title="Noticias",Canal 26
-https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8
+#EXTINF:-1 tvg-id="247Canal.ar" tvg-name="24/7 Noticias" tvg-logo="https://i.imgur.com/4hDCB1M.png" group-title="Noticias",24/7 Canal de Noticias
+https://panel.host-live.com:19360/cn247tv/cn247tv.m3u8
+
+#EXTINF:-1 tvg-id="MultivisionFederal.ar" tvg-name="Multivision Federal" tvg-logo="https://i.imgur.com/jX0lqy3.png" group-title="Noticias",Multivision Federal
+https://panel.host-live.com:19360/8250/8250.m3u8
+
+# === GENERALES ===
+
+#EXTINF:-1 tvg-id="Telefe.ar" tvg-name="Telefe" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Telefe_%28nuevo_logo%29.png/960px-Telefe_%28nuevo_logo%29.png" group-title="Generales",Telefe
+http://45.134.141.161:2200/ARG/TELEFE_HD/index.m3u8
 
 #EXTINF:-1 tvg-id="ElTrece.ar" tvg-name="El Trece" tvg-logo="https://i.imgur.com/TrgBAdA.png" group-title="Generales",El Trece
 https://livetrx01.vodgc.net/eltrecetv/index.m3u8
@@ -30,17 +40,62 @@ http://playcom.trapemn.tv:1935/transcoderip/canal9.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="NETTV.ar" tvg-name="NET TV" tvg-logo="https://i.imgur.com/IhJ0BjF.png" group-title="Generales",NET TV
 http://45.134.141.161:2200/ARG/Net_TV/index.m3u8
 
+#EXTINF:-1 tvg-id="Telemax.ar" tvg-name="Telemax" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Telemax_Argentina_%282018%29.png/960px-Telemax_Argentina_%282018%29.png" group-title="Generales",Telemax
+https://stream-gtlc.telecentro.net.ar/hls/telemaxhls/main.m3u8
+
+# === DEPORTES ===
+
 #EXTINF:-1 tvg-id="TyCSports.ar" tvg-name="TyC Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/TyC_Sports_logo.svg/960px-TyC_Sports_logo.svg.png" group-title="Deportes",TyC Sports
 http://45.181.87.106/TYCSPORTSHD/index.m3u8
 
 #EXTINF:-1 tvg-id="DeporTV.ar" tvg-name="DeporTV" tvg-logo="https://i.imgur.com/THk9ARS.png" group-title="Deportes",DeporTV
 https://edgectc.com/DEPORTES_CTC_PLUS/index.m3u8
 
-#EXTINF:-1 tvg-id="CanalE.ar" tvg-name="Canal E" tvg-logo="https://i.ibb.co/y4pkxH3/Qtc8-M2-PG-400x400.jpg" group-title="Noticias",Canal E
-https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="DSports.ar" tvg-name="DSports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/DirecTV_Sports_Latin_America_%282018%29.png/960px-DirecTV_Sports_Latin_America_%282018%29.png" group-title="Deportes",DSports
+https://streamvidex.qzz.io/videx/dsportsar/index.m3u8
+
+# === MUSICA ===
 
 #EXTINF:-1 tvg-id="MusicTop.ar" tvg-name="MusicTop" tvg-logo="https://cdn.mitvstatic.com/channels/ar_musictop_m.png" group-title="Musica",MusicTop
 https://stream-gtlc.telecentro.net.ar/hls/musictophls/0/playlist.m3u8
 
+#EXTINF:-1 tvg-id="CMMusica.ar" tvg-name="CM" tvg-logo="https://i.imgur.com/gwpETyS.png" group-title="Musica",CM El Canal de la Musica
+http://200.91.32.158:8080/cm/index.m3u8
+
+# === PELICULAS ===
+
 #EXTINF:-1 tvg-id="CineAr.ar" tvg-name="Cine.Ar" tvg-logo="https://i.imgur.com/Iozv4tT.png" group-title="Peliculas",Cine.Ar
 http://200.91.32.158:8080/cinear/index.m3u8
+
+#EXTINF:-1 tvg-id="Cinecanal.ar" tvg-name="Cinecanal" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/960px-CinecanalLA.png" group-title="Peliculas",Cinecanal
+http://45.162.193.35/CINECANAL/index.m3u8
+
+#EXTINF:-1 tvg-id="AMC.ar" tvg-name="AMC" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" group-title="Peliculas",AMC
+http://45.162.193.35/AMC/index.m3u8
+
+# === ENTRETENIMIENTO ===
+
+#EXTINF:-1 tvg-id="Metro.ar" tvg-name="Metro" tvg-logo="https://i.imgur.com/D4nRp62.png" group-title="Entretenimiento",Metro
+https://edgectc.com/METRO/index.m3u8
+
+#EXTINF:-1 tvg-id="ElGourmet.ar" tvg-name="El Gourmet" tvg-logo="https://i.imgur.com/ByMyRI9.png" group-title="Entretenimiento",El Gourmet
+http://200.91.32.158:8080/gourmet/index.m3u8
+
+#EXTINF:-1 tvg-id="EuropaEuropa.ar" tvg-name="Europa Europa" tvg-logo="https://i.imgur.com/w5SOfyJ.png" group-title="Entretenimiento",Europa Europa
+http://200.91.32.158:8080/europa/index.m3u8
+
+# === INFANTILES ===
+
+#EXTINF:-1 tvg-id="Disney.ar" tvg-name="Disney Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/ff/2024_Disney_Channel_text_logo.svg" group-title="Infantiles",Disney Channel
+http://45.134.141.161:2200/ARG/Disney_Channel/index.m3u8
+
+#EXTINF:-1 tvg-id="DisneyJr.ar" tvg-name="Disney Jr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg" group-title="Infantiles",Disney Jr
+http://45.134.141.161:2200/ARG/Disney_Junior/index.m3u8
+
+#EXTINF:-1 tvg-id="MagicKids.ar" tvg-name="Magic Kids" tvg-logo="https://i.imgur.com/CMImqQY.png" group-title="Infantiles",Magic Kids
+https://magicstream.ddns.net/magicstream/stream.m3u8
+
+# === CIENCIA / EDUCACION ===
+
+#EXTINF:-1 tvg-id="TECTV.ar" tvg-name="TEC TV" tvg-logo="https://i.imgur.com/LYy0Rfo.png" group-title="Ciencia",TEC TV
+https://edgectc.com/TEC_HD/index.m3u8
